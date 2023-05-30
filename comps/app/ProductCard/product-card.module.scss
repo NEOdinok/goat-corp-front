@@ -1,0 +1,90 @@
+@import 'styles/breakpoints.scss';
+@import 'styles/vars.scss';
+
+.productCard,
+.textSection,
+.productName {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.imageSection {
+	border: .2rem transparent solid;
+}
+
+.productCard {
+	&:hover {
+		.productImage {
+			opacity: .7;
+		}
+
+		.imageSection {
+			border: .2rem $goat-green solid;
+		}
+	}
+}
+
+.productHeader,
+.productSubheader, 
+.productPrice {
+	text-transform: uppercase;
+}
+
+.productHeader {
+	font-weight: 700;
+}
+
+.productSubheader,
+.productPrice {
+	font-weight: 400;
+}
+
+.productName {
+	gap: .5rem;
+}
+
+@include mobile {
+	.productCard {
+		margin-bottom: 1.4rem;
+	}
+}
+
+@include tabletAndDesktop {
+	.productCard {
+		margin-bottom: 1.6rem;
+	}
+}
+
+@include mobileAndTablet {
+	.textSection,
+	.productCard {
+		gap: 1.2rem
+	}
+
+	.productHeader,
+	.productSubheader, 
+	.productPrice {
+		font-size: 1.2rem;
+	}
+}
+
+.productImage {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+
+@include desktop {
+	.textSection,
+	.productCard {
+		gap: 2.2rem
+	}
+
+	.productHeader,
+	.productSubheader, 
+	.productPrice {
+		font-size: 1.4rem;
+	}
+}

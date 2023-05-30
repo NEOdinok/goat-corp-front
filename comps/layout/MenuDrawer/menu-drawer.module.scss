@@ -1,0 +1,53 @@
+@import 'styles/breakpoints.scss';
+@import 'styles/vars.scss';
+
+.menuDrawer {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	background-color: black;
+	padding: $menuDrawer-padding;
+
+	&Closed {
+		visibility: hidden;
+	}
+
+	&Open {
+		visibility: visible;
+	}
+}
+
+.drawerContent {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	gap: $drawerContent-gap;
+}
+
+.drawerLinks {
+	display: flex;
+	flex-direction: column;
+	gap: $drawerLinks-gap;
+}
+
+.drawerLink {
+	font-weight: $drawerLink-fontWeight;
+	font-size: $drawerLink-fontSize;
+	text-transform: uppercase;
+	color: white;
+}
+
+.closeIcon {
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: white;
+	font-size: $closeIcon-font-size;
+	padding: $closeIcon-padding;
+}

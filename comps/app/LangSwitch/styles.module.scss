@@ -1,0 +1,35 @@
+@import 'styles/breakpoints';
+@import 'styles/vars';
+
+.langSwitch {
+	width: fit-content;
+	position: relative;
+	user-select: none;
+
+	.ul {
+		display: flex;
+		gap: 1rem;
+
+		&.col {
+			flex-direction: column;
+		}
+
+		&.row {
+			flex-direction: row;
+		}
+	}
+
+	.item {
+		color: $lang-switch__inactive-item;
+		font-size: $lang-switch__font-size;
+		opacity: .6;
+		font-weight: 700;
+		cursor: pointer;
+
+		&.active {
+			color: $lang-switch__active-item;
+			opacity: 1;
+		}
+	}
+
+}

@@ -1,0 +1,77 @@
+@import 'styles/breakpoints.scss';
+@import 'styles/vars.scss';
+
+.home {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	background-color: black;
+	display: flex;
+
+	.homeInnerWrap {
+		flex: 1;
+		position: relative;
+		overflow: hidden;
+		display: grid;
+		background-color: rgb(130, 130, 130);
+		background-blend-mode: multiply;
+		// background-image: url('../../../assets/imgs/img-home.jpg');
+		background-image: url('../../../public/assets/imgs/img-home.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center top 45%;
+	}
+
+	.langSection{
+		position: absolute;
+		width: 100%;
+		padding: $home__lang-section-padding;
+	}
+
+	.centerContent {
+		height: fit-content;
+		width: fit-content;
+	}
+
+	.logoSection {
+		display: flex;
+		justify-content: center;
+	}
+
+	.navSection {
+		display: flex;
+		justify-content: center;
+	}
+
+	.footerSection {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		padding: $home__footer-section-padding;
+	}
+}
+
+@include mobile {
+	.home {
+		padding: $home-padding_portrait;
+
+		.homeInnerWrap {
+			display: flex;
+			justify-content: center;
+		}
+
+		.centerContent {
+			margin-top: $home__center-content-padding-top_portrait;
+		}
+	}
+}
+
+@include tabletAndDesktop {
+	.home {
+		padding: $home-padding_desktop;
+
+		.homeInnerWrap {
+			place-content: center;
+		}
+	}
+}

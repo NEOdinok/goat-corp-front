@@ -1,0 +1,26 @@
+@import 'styles/breakpoints';
+@import 'styles/vars';
+
+.productPage {
+	position: relative;
+}
+
+.sizeAndQuantity {
+	position: relative;
+	display: flex;
+}
+
+@include mobile {
+	.productPage {
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+	}
+}
+
+@include tabletAndDesktop {
+	.productPage {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

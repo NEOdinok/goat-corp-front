@@ -1,0 +1,45 @@
+@import 'styles/breakpoints';
+@import 'styles/vars';
+
+.descriptionList {
+	display: flex;
+	flex-direction: column;
+	border: 1px #fff solid;
+
+	.descriptionHead {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #fff;
+
+		.descriptionHeadText {
+			font-size: 1.2rem;
+			padding: 1.6rem 0;
+			color: black;
+			text-transform: uppercase;
+		}
+	}
+
+	.descriptionBody {
+		.descriptionList {
+			padding: 1.6rem;
+			display: flex;
+			flex-direction: column;
+			gap: 1.2rem;
+		}
+
+		.listItem {
+			list-style: none;
+			color: #fff;
+			font-size: 1.2rem;
+		}
+
+		.listItem::before {
+			content: "\2022";  
+			color: #fff; /* Change the color */
+			font-weight: bold; 
+			display: inline-block; 
+			width: 1em; 
+		}
+	}
+}

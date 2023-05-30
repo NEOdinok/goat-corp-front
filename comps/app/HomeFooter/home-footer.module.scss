@@ -1,0 +1,47 @@
+@import 'styles/breakpoints.scss';
+@import 'styles/vars.scss';
+
+.homeFooter {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.socialSection,
+	.homeSection {
+		display: flex;
+		justify-content: center;
+	}
+
+	.socialSection,
+	.termsSection {
+		color: #fff;
+		opacity: .3;
+	}
+
+	.socialSection {
+		gap: $home-footer__icons-gap;
+	}
+
+	.socialIcon {
+		font-size: $home-footer__icon-size;
+		cursor: pointer;
+	}
+}
+
+@include mobileAndTablet {
+	.homeFooter {
+		.terms {
+			font-size: $home-footer__terms-font-size_portrait;
+		}
+	}
+}
+
+@include desktop {
+	.homeFooter {
+		.terms {
+			font-size: $home-footer__terms-font-size_desktop;
+		}
+	}
+}

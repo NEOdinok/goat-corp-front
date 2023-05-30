@@ -1,0 +1,45 @@
+@import 'styles/breakpoints';
+@import 'styles/vars';
+
+.text {
+	color: #fff;
+	font-size: 3rem;
+}
+
+.page, 
+.content {
+	position: relative;
+	height: 100%;
+}
+
+.page {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+@include mobile {
+	.page {
+		padding: 0 1.4rem;
+	}
+}
+
+@include tabletAndDesktop {
+	.page {
+		padding: 0 1.6rem;
+	}
+}
+
+@include mobileAndTablet {
+	.page {
+		padding-bottom: $header-height-mobileAndTablet;
+	}
+}
+
+@include desktop {
+	.page {
+		padding-top: $header-height-desktop;
+	}
+}
