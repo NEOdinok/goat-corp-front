@@ -1,7 +1,7 @@
 @import 'styles/breakpoints.scss';
 @import 'styles/vars.scss';
 
-.homeFooter {
+.linksTerms {
 	position: relative;
 	width: 100%;
 	display: flex;
@@ -31,7 +31,7 @@
 }
 
 @include mobileAndTablet {
-	.homeFooter {
+	.linksTerms {
 		.terms {
 			font-size: $home-footer__terms-font-size_portrait;
 		}
@@ -39,7 +39,7 @@
 }
 
 @include desktop {
-	.homeFooter {
+	.linksTerms {
 		.terms {
 			font-size: $home-footer__terms-font-size_desktop;
 		}

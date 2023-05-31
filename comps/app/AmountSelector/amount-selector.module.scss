@@ -1,0 +1,26 @@
+@import 'styles/breakpoints';
+@import 'styles/vars';
+
+.sizeSelector {
+	position: relative;
+	border: 1px #fff solid;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.amountBtn,
+	.btnIcon,
+	.productAmount {
+		color: #fff;
+		width: $btn-height;
+	}
+
+	.btnIcon {
+		font-size: 3rem;
+	}
+
+	.productAmount {
+		font-size: 3rem;
+	}
+}

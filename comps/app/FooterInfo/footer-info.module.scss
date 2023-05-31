@@ -1,0 +1,38 @@
+.footerInfo {
+	display: flex;
+	flex-direction: column;
+	gap: .6rem;
+}
+
+.infoHeader {
+	font-weight: 500;
+	font-size: 1.2rem;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.listSection {
+	padding-left: 1.2rem; 
+}
+.infoList {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	.listItem {
+		list-style: none;
+		color: #fff;
+		font-size: 1.2rem;
+		line-height: 1.2;
+	}
+
+	.listItem::before {
+		content: "\2022";  
+		color: #fff; /* Change the color */
+		font-weight: bold; 
+		width: 1em; 
+		position: absolute;
+		right: 100%;
+	}
+}

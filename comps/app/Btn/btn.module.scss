@@ -1,0 +1,27 @@
+@import 'styles/breakpoints';
+@import 'styles/vars';
+
+.btn {
+	width: 100%;
+	border: 1px $goat-green solid;
+	height: $btn-height;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:hover {
+		background-color: $goat-green;
+
+		.btnText {
+			color: black
+		}
+	}
+}
+
+.btnText {
+	color: #fff;
+	font-weight: 500;// med
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}

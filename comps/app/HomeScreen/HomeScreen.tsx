@@ -5,8 +5,8 @@ import Image from 'next/image'
 import goatLogo from 'public/assets/logos/goat_white.svg';
 import LangSwitch from 'comps/app/LangSwitch/LangSwitch';
 import HomeNav from 'comps/app/HomeNav/HomeNav';
-import HomeFooter from 'comps/app/HomeFooter/HomeFooter';
 import LanguageContextProvider from '@/contexts/LanguageContext';
+import LinksTerms from '../LinksTerms/LinksTerms';
 
 const HomeScreen: React.FC = () => {
 	return (
@@ -32,7 +32,7 @@ const HomeScreen: React.FC = () => {
 						</section>
 					</div>
 					<section className={styles.footerSection}>
-						<HomeFooter />
+						<LinksTerms />
 					</section>
 				</div>
 			</main>
